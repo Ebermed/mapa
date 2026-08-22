@@ -1,0 +1,9 @@
+{
+  "name": "Mapa",
+  "short_name": "Mapa",
+  "start_url": "/mapa/",
+  "display": "standalone",
+  "background_color": "#F5EEDF",
+  "theme_color": "#F5EEDF",
+  "description": "Tu mapa personal, traducido a cosas que puedes reconocer en tu vida diaria."
+}
