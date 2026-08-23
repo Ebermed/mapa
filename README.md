@@ -10,6 +10,7 @@ Mapa traduce una carta BaZi a lenguaje cotidiano, concreto y auditable.
 - Vista de trazabilidad para saber qué regla produjo cada frase.
 - Tu centro, Tu mezcla, Tus formas de actuar, Tus territorios, Tus cuatro puntos y relaciones relevantes.
 - Guardado local en el dispositivo. Sin backend, sin API de IA y sin costo por usuario.
+- Despliegue estático gratuito con GitHub Pages.
 
 ## Desarrollo
 
