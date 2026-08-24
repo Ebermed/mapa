@@ -5,43 +5,28 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#F5EEDF">
 <title>Identidades · Mapa</title>
-<style>
-:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#2E3338;background:#F5EEDF;--paper:#F5EEDF;--line:#CBBEA6;--ink:#2E3338;--sepia:#5C4A3D}
-*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 12% 10%,rgba(255,255,255,.78),transparent 25%),linear-gradient(180deg,#F8F2E7,#F1E6D1);overflow-x:hidden}
-body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.22'/%3E%3C/svg%3E")}
-header{height:72px;display:flex;align-items:center;justify-content:space-between;padding:0 22px;border-bottom:1px solid rgba(92,74,61,.15);position:relative;z-index:2}.brand{display:flex;align-items:center;gap:10px;letter-spacing:.18em;font-size:.78rem;font-weight:800}.mark{width:31px;height:31px;border:1px solid var(--ink);border-radius:50%;display:grid;place-items:center;font-family:Georgia,serif}.back{color:var(--sepia);text-decoration:none;font-size:.85rem}
-main{max-width:1040px;margin:0 auto;padding:68px 22px 90px;position:relative}.kicker{font-size:.7rem;letter-spacing:.17em;font-weight:800;color:#7c6d59;text-transform:uppercase}.hero{max-width:760px}.hero h1{font:500 clamp(3rem,8vw,6rem)/.96 Georgia,serif;letter-spacing:-.04em;margin:15px 0 20px}.hero p{font-size:1.08rem;line-height:1.6;color:#5a544d;max-width:660px}.legend{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.legend span{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:.7rem;color:#6f6252;background:rgba(255,255,255,.35)}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:48px}.card{position:relative;min-height:280px;border:1px solid color-mix(in srgb,var(--accent) 28%,#CBBEA6);border-radius:28px;padding:22px;background:linear-gradient(145deg,color-mix(in srgb,var(--wash) 72%,white),rgba(255,255,255,.52));box-shadow:0 18px 46px rgba(69,56,43,.07);overflow:hidden}.card:before,.card:after{content:"";position:absolute;border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);border-radius:50%;width:210px;height:160px;right:-82px;top:-72px;transform:rotate(14deg)}.card:after{width:155px;height:112px;right:-50px;top:-39px;transform:rotate(-8deg)}.stem{font-size:.68rem;letter-spacing:.13em;text-transform:uppercase;color:#746858;font-weight:800}.icon{width:104px;height:104px;margin:25px 0 26px;display:grid;place-items:center;border-radius:32px;background:rgba(255,255,255,.45);border:1px solid rgba(255,255,255,.72);box-shadow:0 12px 30px rgba(53,45,36,.06),inset 0 1px 0 white}.icon svg{width:68px;height:68px;fill:none;stroke:var(--accent);stroke-width:1.75;stroke-linecap:round;stroke-linejoin:round}.card h2{font:500 2.35rem/1 Georgia,serif;margin:0 0 8px}.meta{display:flex;gap:8px;flex-wrap:wrap;color:#675e52;font-size:.78rem}.meta b{color:var(--accent);font-weight:800}.caption{font-size:.92rem;line-height:1.45;color:#5f584f;margin:14px 0 0}.pairLabel{grid-column:1/-1;margin:25px 0 -3px;padding-top:20px;border-top:1px dashed #c9bba5;display:flex;align-items:center;gap:10px}.pairLabel i{width:10px;height:10px;border-radius:50%;background:var(--accent)}.pairLabel b{font:500 1.4rem Georgia,serif}.pairLabel span{font-size:.72rem;color:#7c705f;text-transform:uppercase;letter-spacing:.1em}
-.note{margin-top:42px;padding:20px 22px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.34);color:#655d52;line-height:1.55}.note b{color:#423d37}
-@media(max-width:680px){main{padding-top:48px}.grid{grid-template-columns:1fr}.pairLabel{grid-column:auto}.card{min-height:250px}.icon{width:92px;height:92px}.icon svg{width:60px;height:60px}}
-</style>
+<link rel="stylesheet" href="./identidades.css">
 </head>
 <body>
 <header><div class="brand"><div class="mark">M</div>MAPA</div><a class="back" href="./">← Volver a Mapa</a></header>
 <main>
-<section class="hero"><div class="kicker">GALERÍA DE IDENTIDADES</div><h1>Los diez iconos de Mapa.</h1><p>Esta es la vista de revisión de las diez identidades visuales asociadas a los Maestros del Día. Aquí puedes compararlas todas juntas, sin tener que abrir cartas distintas.</p><div class="legend"><span>5 elementos</span><span>Yin + Yang</span><span>10 identidades</span></div></section>
-<section class="grid">
-<div class="pairLabel" style="--accent:#4F7A52"><i></i><b>Madera</b><span>Jia · Yi</span></div>
-<article class="card" style="--accent:#4F7A52;--wash:#E3EBD8"><div class="stem">Jia 甲 · Madera Yang</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M11 19c0-5 3-9 5-12 2 3 5 7 5 12M16 11c-2 0-4-1-5-3"/></svg></div><h2>Roble</h2><div class="meta"><b>Yang</b><span>·</span><span>Madera</span></div><p class="caption">Dirección y constancia.</p></article>
-<article class="card" style="--accent:#4F7A52;--wash:#E3EBD8"><div class="stem">Yi 乙 · Madera Yin</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M6 16c4-6 7-8 12-10-1 5-4 9-10 13-1-2-2-2-2-3z"/></svg></div><h2>Hiedra</h2><div class="meta"><b>Yin</b><span>·</span><span>Madera</span></div><p class="caption">Adaptación y estrategia.</p></article>
-
-<div class="pairLabel" style="--accent:#C65A3D"><i></i><b>Fuego</b><span>Bing · Ding</span></div>
-<article class="card" style="--accent:#C65A3D;--wash:#F6DED2"><div class="stem">Bing 丙 · Fuego Yang</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 5v2M12 17v2M5 12h2M17 12h2M7.5 7.5l1.5 1.5M15 15l1.5 1.5M16.5 7.5 15 9M9 15l-1.5 1.5M12 8a4 4 0 1 1 0 8 4 4 0 0 1 0-8z"/></svg></div><h2>Sol</h2><div class="meta"><b>Yang</b><span>·</span><span>Fuego</span></div><p class="caption">Impulso y presencia.</p></article>
-<article class="card" style="--accent:#C65A3D;--wash:#F6DED2"><div class="stem">Ding 丁 · Fuego Yin</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M14 20c0-4 5-5 5-9 0-3-2-5-4-7 0 3-2 4-4 6-2 2-3 4-3 7 0 4 3 7 6 7s5-2 5-4z"/></svg></div><h2>Brasa</h2><div class="meta"><b>Yin</b><span>·</span><span>Fuego</span></div><p class="caption">Detalle y continuidad.</p></article>
-
-<div class="pairLabel" style="--accent:#B28747"><i></i><b>Tierra</b><span>Wu · Ji</span></div>
-<article class="card" style="--accent:#B28747;--wash:#F1E3C6"><div class="stem">Wu 戊 · Tierra Yang</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M5 17 12 7l7 10H5z"/></svg></div><h2>Montaña</h2><div class="meta"><b>Yang</b><span>·</span><span>Tierra</span></div><p class="caption">Estabilidad y sostén.</p></article>
-<article class="card" style="--accent:#B28747;--wash:#F1E3C6"><div class="stem">Ji 己 · Tierra Yin</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M7 17h10M9 17v-4m6 4v-6M8 10c1-2 3-3 4-5 1 2 3 3 4 5"/></svg></div><h2>Huerto</h2><div class="meta"><b>Yin</b><span>·</span><span>Tierra</span></div><p class="caption">Cuidado y mantenimiento.</p></article>
-
-<div class="pairLabel" style="--accent:#66707A"><i></i><b>Metal</b><span>Geng · Xin</span></div>
-<article class="card" style="--accent:#66707A;--wash:#ECEFF1"><div class="stem">Geng 庚 · Metal Yang</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4l7 7-7 9-7-9 7-7z"/></svg></div><h2>Acero</h2><div class="meta"><b>Yang</b><span>·</span><span>Metal</span></div><p class="caption">Decisión y firmeza.</p></article>
-<article class="card" style="--accent:#66707A;--wash:#ECEFF1"><div class="stem">Xin 辛 · Metal Yin</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 5l6 4-2 8h-8L6 9l6-4z"/></svg></div><h2>Joya</h2><div class="meta"><b>Yin</b><span>·</span><span>Metal</span></div><p class="caption">Precisión y criterio.</p></article>
-
-<div class="pairLabel" style="--accent:#2E5E7E"><i></i><b>Agua</b><span>Ren · Gui</span></div>
-<article class="card" style="--accent:#2E5E7E;--wash:#DCEAF0"><div class="stem">Ren 壬 · Agua Yang</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M4 14c2-2 4-2 6 0s4 2 6 0 4-2 4-2M4 10c2-2 4-2 6 0s4 2 6 0 4-2 4-2"/></svg></div><h2>Marea</h2><div class="meta"><b>Yang</b><span>·</span><span>Agua</span></div><p class="caption">Movimiento y conexión.</p></article>
-<article class="card" style="--accent:#2E5E7E;--wash:#DCEAF0"><div class="stem">Gui 癸 · Agua Yin</div><div class="icon"><svg viewBox="0 0 24 24"><path d="M12 4c3 4 6 7 6 11a6 6 0 0 1-12 0c0-4 3-7 6-11z"/></svg></div><h2>Rocío</h2><div class="meta"><b>Yin</b><span>·</span><span>Agua</span></div><p class="caption">Contexto e imaginación.</p></article>
+<section class="hero">
+<div class="kicker">BIBLIOTECA VISUAL</div>
+<h1>Los iconos de Mapa.</h1>
+<p>Aquí están las diez identidades de los Maestros del Día y los doce animales de las ramas terrestres. Cada icono se puede bajar como PNG transparente en alta resolución.</p>
+<div class="legend"><span>10 Maestros del Día</span><span>12 animales</span><span>PNG 1024 × 1024</span><span>Fondo transparente</span></div>
+<div class="bulkActions"><button class="bulkButton" type="button" data-download-group="masters">Descargar los 10 Maestros ↓</button><button class="bulkButton" type="button" data-download-group="animals">Descargar los 12 animales ↓</button></div>
+<div class="exportNote">Si el navegador pregunta si permites varias descargas, acéptalo para usar los botones de descarga masiva.</div>
 </section>
-<div class="note"><b>Esta página es para revisión visual.</b> Los iconos son exactamente los mismos paths SVG que usa Mapa en las tarjetas de las cartas. Si alguno se siente demasiado genérico, demasiado parecido a otro o simplemente feo, podemos redibujarlo sin tocar el motor.</div>
+
+<section class="sectionHead"><div><div class="kicker">MAESTROS DEL DÍA</div><h2>Diez identidades</h2></div><p>Los mismos trazos que aparecen dentro de Mapa. El color exportado corresponde al elemento de cada identidad.</p></section>
+<section class="grid" data-group="masters"></section>
+
+<section class="sectionHead"><div><div class="kicker">RAMAS TERRESTRES</div><h2>Doce animales</h2></div><p>Una biblioteca visual para Rata, Buey, Tigre, Conejo, Dragón, Víbora, Caballo, Cabra, Mono, Gallo, Perro y Cerdo.</p></section>
+<section class="grid animalGrid" data-group="animals"></section>
+
+<div class="note"><b>Los archivos salen listos para usar.</b> Cada PNG se exporta a 1024 × 1024 px con fondo transparente y conserva el color del elemento. La descarga ocurre completamente en tu navegador: no sube imágenes a ningún servidor.</div>
 </main>
+<script src="./identidades.js"></script>
 </body>
 </html>
